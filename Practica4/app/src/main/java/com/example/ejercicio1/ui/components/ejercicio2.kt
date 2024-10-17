@@ -34,7 +34,7 @@ fun MyButtonColor(name: String, color : Color, modifier: Modifier){
     var colorText by remember { mutableStateOf(Color.White) }
     var colorBorde by remember { mutableStateOf(BorderStroke(1.dp, Color.Black))}
     var shape by remember { mutableStateOf(RoundedCornerShape(20.dp)) }
-    Box (Modifier){
+    Box (modifier){
         Button(onClick = {
             textoBoton = "Ha cambiado el texto"
             colorBoton = Color.Cyan
@@ -47,7 +47,7 @@ fun MyButtonColor(name: String, color : Color, modifier: Modifier){
                 containerColor = colorBoton),
             shape = shape
             ) {
-
+            Text(textoBoton , color = colorText)
         }
 
     }
