@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
+import com.example.ejercicio1.ui.components.Ejercicio4
 import com.example.ejercicio1.ui.components.MyButtonColor
 import com.example.ejercicio1.ui.components.MyText
 import com.example.ejercicio1.ui.components.ejericio3
@@ -26,9 +27,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Ejercicio1Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    ejericio3(
-
-                    )
+                    Ejercicio4(Modifier.padding(innerPadding))
                 }
             }
         }
